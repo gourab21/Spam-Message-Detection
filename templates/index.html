@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detector</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        input, button { padding: 10px; margin: 10px; width: 90%; border: 1px solid #ccc; border-radius: 5px; }
+        button { cursor: pointer; background-color: #28a745; color: white; border: none; }
+        .reset { background-color: #dc3545; }
+        .result { font-weight: bold; margin-top: 20px; padding: 10px; background: #e9ecef; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Spam Message Detector</h2>
+        <form method="post">
+            <input type="text" name="message" placeholder="Enter your message here" required>
+            <button type="submit">Check</button>
+            <button type="submit" name="reset" class="reset">Reset</button>
+        </form>
+        {% if message %}
+        <div class="result">
+            <h3>Original Message</h3>
+            <p>{{ message }}</p>
+            <h3>LSTM Model Prediction</h3>
+            <p>Prediction: <strong>{{ lstm_result }}</strong></p>
+            <p>Confidence: <strong>{{ lstm_confidence | round(4) }}</strong></p>
+            <h3>ML Model Prediction</h3>
+            <p>Prediction: <strong>{{ ml_result }}</strong></p>
+            <p>Confidence: <strong>{{ ml_confidence | round(2) }}%</strong></p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
