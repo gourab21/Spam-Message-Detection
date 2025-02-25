@@ -1,4 +1,4 @@
-# Spam Detection Web App
+# Spam Message Detection
 
 This project is a web-based spam detection system that utilizes two models:
 1. **LSTM Model** - A deep learning-based approach using TensorFlow and Keras.
