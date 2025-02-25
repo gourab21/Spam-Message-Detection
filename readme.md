@@ -18,7 +18,7 @@ Ensure you have Python installed (preferably 3.8 or higher).
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/gourab21/Spam-Message-Detection-.git
+git clone https://github.com/gourab21/Spam-Message-Detection.git
 cd spam-detection-webapp
 ```
 
