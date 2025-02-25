@@ -46,13 +46,15 @@ Ensure that the following model files are present in the project directory:
 
 ## Project Structure
 ```
+├── templates/              # Folder containing HTML files
+│   ├── index.html          # Frontend template
 ├── app.py                  # Flask application
-├── index.html              # Frontend template
 ├── requirements.txt        # Dependencies
 ├── spam_classifier_lstm.keras  # LSTM model file
 ├── spam_classifier.pkl     # Traditional ML model file
 ├── tokenizer.pkl           # Tokenizer for LSTM
-└── README.md               # Documentation
+├── readme.md               # Documentation
+└── spam/                   # Additional project files
 ```
 
 ## License
