@@ -45,7 +45,7 @@ Ensure that the following model files are present in the project directory:
 - `spam_classifier.pkl` (Traditional ML model)
 
 ## Web Interface
-![Capture](https://github.com/user-attachments/assets/c43bd425-8f92-4d97-8aef-626695bda22e)
+![Webapp](https://github.com/user-attachments/assets/c43bd425-8f92-4d97-8aef-626695bda22e)
 
 
 
